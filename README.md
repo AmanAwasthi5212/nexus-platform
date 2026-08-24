@@ -3,46 +3,101 @@
 ## Intelligent Global Logistics Platform
 
 NEXUS is a production-style cloud-native logistics platform
-designed to demonstrate modern backend engineering practices.
+designed to demonstrate modern backend engineering, distributed
+systems, cloud infrastructure, and software architecture practices.
 
-## Objectives
+## Project Goals
 
-- Build scalable Java backend services
-- Apply microservice architecture
-- Implement event-driven communication
-- Use Kafka for asynchronous processing
-- Deploy using Docker and Kubernetes
-- Run production infrastructure on AWS
-- Implement automated CI/CD
-- Implement observability
-- Apply distributed-system resilience patterns
-- Practice senior-level system design
+NEXUS is being built to demonstrate:
 
-## Technology Stack
+- Senior-level Java backend engineering
+- Microservice architecture
+- Event-driven architecture
+- Distributed systems
+- Cloud-native development
+- Kubernetes
+- AWS
+- Infrastructure as Code
+- CI/CD
+- Observability
+- Production-grade testing
+- System design
+
+## Planned Technology Stack
+
+### Backend
 
 - Java 21
 - Spring Boot
-- PostgreSQL
+- Spring Security
+- Spring Data JPA
+- Maven
+
+### Architecture
+
+- Microservices
+- REST APIs
 - Kafka
+- Event-driven architecture
+- Domain-Driven Design
+- Hexagonal Architecture
+- Saga Pattern
+- Outbox Pattern
+
+### Data
+
+- PostgreSQL
 - Redis
+- NoSQL where justified
+
+### Infrastructure
+
 - Docker
 - Kubernetes
 - AWS
 - Terraform
-- GitHub Actions
+
+### Testing
+
 - JUnit 5
 - Mockito
 - Testcontainers
+- Integration Testing
+- Contract Testing
+
+### Observability
+
 - Prometheus
 - Grafana
 - OpenTelemetry
+- Jaeger
+- ELK
+
+### CI/CD
+
+- Git
+- GitHub
+- GitHub Actions
 
 ## Architecture
 
-Coming soon.
+Architecture documentation will be added as the system evolves.
 
 ## Documentation
 
-Architecture decisions are documented under:
+- Architecture: `docs/architecture/`
+- Architecture Decisions: `docs/decisions/`
+- Development Notes: `docs/development/`
+- Operations: `docs/operations/`
 
-`docs/architecture/`
+## Development Rules
+
+See [`rules.md`](rules.md).
+
+## Project Status
+
+🚧 Day 1 — Repository and development environment setup
+
+## License
+
+License to be decided.
