@@ -82,4 +82,42 @@ public class Shipment {
 
     @Column(nullable = false, updatable = false)
     private Instant createdAt;
+
+    public Shipment(
+        String senderName, String receiverName,
+        String senderEmail, String receiverEmail,
+        String senderPhoneNumber, String receiverPhoneNumber,
+        String senderAddressLine1, String senderAddressLine2,
+        String senderCity, String senderState,
+        String senderPostalCode, String senderCountry,
+        String receiverAddressLine1, String receiverAddressLine2,
+        String receiverCity, String receiverState,
+        String receiverPostalCode, String receiverCountry,
+        BigDecimal weight, String weightUnit,
+        String packageDescription
+    ) {
+        this.status = "CREATED";
+        this.senderName = senderName;
+        this.receiverName = receiverName;
+        this.senderEmail = senderEmail;
+        this.receiverEmail = receiverEmail;
+        this.senderPhoneNumber = senderPhoneNumber;
+        this.receiverPhoneNumber = receiverPhoneNumber;
+        this.senderAddressLine1 = senderAddressLine1;
+        this.senderAddressLine2 = senderAddressLine2;
+        this.senderCity = senderCity;
+        this.senderState = senderState;
+        this.senderPostalCode = senderPostalCode;
+        this.senderCountry = senderCountry;
+        this.receiverAddressLine1 = receiverAddressLine1;
+        this.receiverAddressLine2 = receiverAddressLine2;
+        this.receiverCity = receiverCity;
+        this.receiverState = receiverState;
+        this.receiverPostalCode = receiverPostalCode;
+        this.receiverCountry = receiverCountry;
+        this.weight = weight;
+        this.weightUnit = weightUnit;
+        this.packageDescription = packageDescription;
+        this.createdAt = Instant.now();
+    }
 }
