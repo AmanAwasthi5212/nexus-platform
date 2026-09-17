@@ -1,6 +1,7 @@
 package com.nexus.shipment.dto;
 
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
@@ -20,7 +21,7 @@ public record ShipmentCreateRequestDto (
     @Positive(message = "Weight must be greater than zero")
     BigDecimal weight,
 
-    @NotNull(message = "Weight unit is required")
+    @NotBlank(message = "Weight unit is required")
     String weightUnit,
 
     String packageDescription
